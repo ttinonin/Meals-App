@@ -1,6 +1,11 @@
 interface GridTileProp {
     title: string,
-    color: string
+    color: string,
+    onClick: () => void
 }
 
-export { GridTileProp as default }
+interface MealItemProp {
+    title: string
+}
+
+export { MealItemProp, GridTileProp as default }
