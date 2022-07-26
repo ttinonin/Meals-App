@@ -15,7 +15,7 @@ This app was made with:
 
 - [x] Set screens navigation
 - [x] Create the detailed meal overvie page
-- [ ] Set the header buttons
+- [x] Set the header buttons
 
 ## Run the app
 
