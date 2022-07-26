@@ -5,6 +5,7 @@ interface GridTileProp {
 }
 
 interface MealItemProp {
+    id: string,
     title: string,
     imageUrl: string,
     duration: string,
@@ -12,4 +13,12 @@ interface MealItemProp {
     affordability: string
 }
 
-export { MealItemProp, GridTileProp as default }
+interface MealDetaisProp {
+    duration: string,
+    complexity: string,
+    affordability: string,
+    style?: any,
+    textStyle?: any
+}
+
+export { MealDetaisProp, MealItemProp, GridTileProp as default }

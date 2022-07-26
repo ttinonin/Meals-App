@@ -8,7 +8,7 @@ function MealOverviewScreen({ route, navigation }: any){
     
     //Dinamically chage the screen title to the categry title
     useLayoutEffect(() => {
-        const categoryTitle = CATEGORIES.find((category) => category.id === id).title;
+        const categoryTitle = CATEGORIES.find((category) => category.id === id)?.title;
     
         navigation.setOptions({
             title: categoryTitle
@@ -24,6 +24,7 @@ function MealOverviewScreen({ route, navigation }: any){
     const renderMealItem = (itemData: any) => {
         return (
             <MealItem 
+                id={itemData.item.id}
                 title={itemData.item.title} 
                 imageUrl={itemData.item.imageUrl}
                 duration={itemData.item.duration}
