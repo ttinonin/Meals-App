@@ -21,4 +21,10 @@ interface MealDetaisProp {
     textStyle?: any
 }
 
-export { MealDetaisProp, MealItemProp, GridTileProp as default }
+interface ButtonProp {
+    icon: any,
+    color: string,
+    onClick: () => void
+}
+
+export { ButtonProp, MealDetaisProp, MealItemProp, GridTileProp as default }
